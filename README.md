@@ -7,7 +7,11 @@ Section 11: Added css template\
 Section 12: Added function for searching by category\
 Section 14: Added function for searching by keyword\
 Section 15: Added product detail\
-Section 16: Added pagination
+Section 16: Added pagination\
+Section 19: Added shopping cart\
+Section 20: Added checkout\
+Section 21: Added checkout validation\
+Section 23: Added function to save order to db\
 
 Release 2.0: Add products to shopping cart (CRUD)
 
