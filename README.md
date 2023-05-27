@@ -12,6 +12,7 @@ Section 19: Added shopping cart\
 Section 20: Added checkout\
 Section 21: Added checkout validation\
 Section 23: Added function to save order to db\
+Section 24: Added frontend save order stuff\
 
 Release 2.0: Add products to shopping cart (CRUD)
 

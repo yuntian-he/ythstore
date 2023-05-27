@@ -8,8 +8,8 @@
 		<version>3.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.luv2code</groupId>
-	<artifactId>spring-boot-ecommerce</artifactId>
+	<groupId>com.yth</groupId>
+	<artifactId>spring-boot-store</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-ecommerce</name>
 	<description>Spring Boot Ecommerce Project</description>
