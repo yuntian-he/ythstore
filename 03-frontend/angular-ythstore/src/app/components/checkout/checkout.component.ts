@@ -48,14 +48,14 @@ export class CheckoutComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private luv2ShopFormService: YthShopFormService,
+    private YthShopFormService: YthShopFormService,
     private cartService: CartService,
     private checkoutService: CheckoutService,
     private router: Router
   ) {}
 
   ngOnInit(): void {
-    this.setupStripePaymentForm();
+    // this.setupStripePaymentForm();
     this.reviewCartDetails();
 
     // read the user's email address from browser storage
@@ -154,7 +154,7 @@ export class CheckoutComponent implements OnInit {
     // });
 
     // populate countries
-    this.luv2ShopFormService.getCountries().subscribe((data) => {
+    this.YthShopFormService.getCountries().subscribe((data) => {
       console.log('Retrieved countries ' + JSON.stringify(data));
       this.countries = data;
     });
@@ -409,7 +409,7 @@ export class CheckoutComponent implements OnInit {
       startMonth = 1;
     }
 
-    this.luv2ShopFormService
+    this.YthShopFormService
       .getCreditCardMonths(startMonth)
       .subscribe((data) => {
         console.log('Retrieved credit card month: ' + JSON.stringify(data));
@@ -425,7 +425,7 @@ export class CheckoutComponent implements OnInit {
     console.log(`{formGroupCode} country code: ${countryCode}`);
     console.log(`{formGroupName} country name: ${countryName}`);
 
-    this.luv2ShopFormService.getStates(countryCode).subscribe((data) => {
+    this.YthShopFormService.getStates(countryCode).subscribe((data) => {
       if (formGroupName === 'shippingAddress') {
         this.shippingAddressStates = data;
       } else {
