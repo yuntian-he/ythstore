@@ -55,7 +55,7 @@ export class CheckoutComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.setupStripePaymentForm();
+    this.setupStripePaymentForm();
     this.reviewCartDetails();
 
     // read the user's email address from browser storage
@@ -133,7 +133,7 @@ export class CheckoutComponent implements OnInit {
         // ]),
         // expirationMonth: [''],
         // expirationYear: [''],
-      }),
+      })
     });
 
     // // populate credit card months
